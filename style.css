@@ -20,13 +20,7 @@ body {
     background-repeat: no-repeat;
     margin: 0;
 }
-#home {
-    background-image: url('IMG/backgroun foto.jpg'); /* Utilise le nom exact du dossier sur GitHub */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    min-height: 90vh;
-}
+
 
 /* --- Navigation --- */
 .flex-container {
