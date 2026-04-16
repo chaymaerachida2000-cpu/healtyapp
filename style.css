@@ -20,6 +20,13 @@ body {
     background-repeat: no-repeat;
     margin: 0;
 }
+#home {
+    background-image: url('img/background.jpg'); /* Utilise le nom exact du dossier sur GitHub */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
 
 /* --- Navigation --- */
 .flex-container {
