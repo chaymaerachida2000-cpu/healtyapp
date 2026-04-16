@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEALTHCARE TRACKER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <link rel="short cut icon" href="./IMG/ICON.jpg" type="image/x-icon" />
+</head>
+<body>
+
+    <div class="banair-container">
+        <nav class="desktop-nav">
+            <ul class="flex-container">
+                <li class="flex-item">
+                    <i class="fa-solid fa-laptop-medical"></i>
+                    <span>HEALTH</span>
+                </li>
+                 <li class="flex-item"><a href="index.html">HOME</a></li>
+                <li class="flex-item"><a href="about-Us.html">About-Us</a></li>
+                
+                <li class="flex-item"><a href="#services">Services</a></li>
+                <li class="flex-item"><a href="#contact-us">Contact-Us</a></li>
+            </ul>
+        </nav> 
+    </div> 
+
+    <section id="home">
+        <div class="title"> 
+            <h1>Surveil your health 🍎</h1> 
+            <div class="calc-box">
+                <input type="number" id="water-id" placeholder="your weight (kg)">
+                <input type="number" id="gym-id" placeholder="Min d gym (min)">
+                <button id="btn-health-calc">Resultad</button>
+            </div>
+            <h2 id="welcome-message" style="display:none;"></h2>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2 class="services-title">Our Services</h2>
+        <div class="services-grid">
+           <button class="service-btn-square" onclick="showImage('water')">
+                <i class="fa-solid fa-droplet"></i>
+                <span id="water-tracker">Water Tracker</span>
+            </button>
+            <button class="service-btn-square" onclick="showImage('GYM')">
+                <i class="fa-solid fa-dumbbell"></i>
+                <span id="Gym-Coaching">Gym Coaching</span>
+            </button>
+                 <button class="service-btn-square" onclick="showImage('Food')">
+                <i class="fa-solid fa-apple-whole"></i>
+                <span id="Healty-Food">Healthy Food</span>
+            </button>
+        </div>
+        <div id="image-display" style="margin-top: 20px; text-align: center;">
+        <img id="dynamic-img" src="" alt="" style="max-width: 100%; border-radius: 10px; display: none;">
+    </div>
+    </section>
+
+    <footer id="contact-us">
+        <div class="contact-us-container">
+            <h2>GET IN TOUCH</h2>
+            <div class="social-link">
+                <a href="tel:+212666866986"><i class="fa-solid fa-phone"></i></a>
+                <a href="mailto:chaymaerachida2000@gmail.com"><i class="fa-solid fa-at"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>

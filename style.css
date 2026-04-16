@@ -1,0 +1,268 @@
+/* --- Base Styles --- */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #D5ECEE;
+    background-image: url('/IMG/a01a85bd142d52db39241119a463718d.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+/* --- Navigation --- */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3574A9;
+    padding: 15px;
+    list-style: none;
+}
+
+.flex-item a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- Hero Section & Registration --- */
+.title {
+    position: relative;
+    padding: 100px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.title h1 {
+    color: #231d4d;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(255,255,255,0.5);
+}
+
+.hamburger {
+    position: relative;
+    display: inline-block;
+}
+
+/* Had l-bouton li k-i-fte7 l-form */
+.btn-open-menu {
+    background-color: #231d4d;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.btn-open-menu:hover {
+    background-color: #3574A9;
+    transform: scale(1.05);
+}
+
+/* L-form mkhbbiya */
+.hamburger-content {
+    display: none; 
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    flex-direction: column;
+    gap: 15px;
+    width: 280px;
+    z-index: 1000;
+}
+
+/* Class k-i-zidha JS bach t-ban l-form */
+.show-now {
+    display: flex !important;
+}
+
+.hamburger-content input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#submit-btn {
+    background-color: #3574A9;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#welcome-message {
+    margin-top: 20px;
+    color: #231d4d;
+    background: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+/* --- About Us Section --- */
+.about-section {
+    padding: 80px 20px;
+    background: white;
+    text-align: center;
+}
+
+/* --- Contact Us Section --- */
+.contact-us-container {
+    background-color: #3574A9; /* Lon l-azraq d s-site */
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+
+.contact-us-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-us-container h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+/* --- Social Links (Icons) --- */
+.social-link {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Khwa bin l-icons */
+}
+
+.social-link a {
+    text-decoration: none; /* n-7iyedo l-khet ta7t l-icon */
+}
+
+.social-link i {
+    font-size: 40px; /* n-kebbro l-icon */
+    color: white; /* Lawn l-asli */
+    transition: all 0.3s ease; /* Bach t-tbeddel chwiya b chwiya */
+}
+
+/* Hadou huma li ktabti nti - Fixed */
+.social-link i:hover {
+    color: #000000; /* K-welliw k7al melli k-t-7etti souris */
+    transform: translateY(-5px); /* K-i-tla3 l-icon chwiya l-fouq */
+}
+/* --- Modern Services Grid --- */
+#services {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    text-align: center;
+}
+
+.services-title {
+    font-size: 2.5rem;
+    color: #231d4d;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+}
+
+.services-title::after {
+    content: '';
+    width: 50%;
+    height: 4px;
+    background: #3574A9;
+    position: absolute;
+    bottom: -10px;
+    left: 25%;
+    border-radius: 2px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Hadu houma l-morabba3at jdad */
+.service-btn-square {
+    background: rgba(255, 255, 255, 0.7); /* Glass effect */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 40px 20px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.service-btn-square:hover {
+    transform: translateY(-15px); /* K-t-tla3 l-fouq */
+    background: #3574A9; /* K-t-welli zarqa */
+    box-shadow: 0 15px 30px rgba(53, 116, 169, 0.3);
+}
+
+.service-btn-square i {
+    font-size: 50px;
+    color: #3574A9;
+    transition: 0.3s;
+}
+
+.service-btn-square:hover i {
+    color: white; /* Icon k-t-welli byda f l-hover */
+    transform: rotate(10deg); /* Icon k-t-miel chwiya */
+}
+
+.service-btn-square span {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #231d4d;
+    transition: 0.3s;
+}
+
+.service-btn-square:hover span {
+    color: white;
+}
+.hamburger-content {
+    display: none; /* hadi hiya li k-tkhlliha mkhbbiya f l-lowel */
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+    width: 250px;
+}
+
+/* Had l-class hiya li k-t-fiyyaqha melli k-t-cliki */
+.show-now {
+    display: flex !important;
+}
