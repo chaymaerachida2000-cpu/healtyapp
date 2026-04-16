@@ -20,6 +20,19 @@ body {
     margin: 0;
 }
 
+#index-page {
+    background-image: url('./IMG/a01a85bd142d52db39241119a463718d.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* L-pages lakhrin ghadi i-bqaw b lawn 3adi */
+body {
+    background-color: #D5ECEE; /* Lawn mo-waḥḥad l-ga3 l-pages */
+}
+
 /* --- Navigation --- */
 .flex-container {
     display: flex;
